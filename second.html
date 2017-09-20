@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		em{
+			color: red;
+
+		}
+
+	</style>
+	<script type="text/javascript" src="foetron.js"></script>
+	<title>Second HTML</title><label>Please enter something</label>
+</head>
+<body id="bd" onload="checkSecond()">
+<form id="form" onsubmit="validate()" name="StartForm" action="third.html" method="GET">
+		<label id="stuff"></label><br/><br/><br/>
+		<textarea style="height: 100px; width: 100px;" type="text" name="myinput" placeholder="Please enter something in me!" onkeyup="show(this)"></textarea>
+		<!--<input type="submit" name="submit" value="submit"></input>-->
+</form>
+<label id="errormsg" style="color:red;"></label>
+<div style="border:solid; width: 500px;" id="display"></div>
+
+</body>
+
+</html>
