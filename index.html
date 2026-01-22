@@ -2,609 +2,246 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Freelancer portfolio of anmol thukral">
-    <meta name="author" content="anmol thukral">
+    <meta name="description" content="Freelancer portfolio of Anmol Thukral - Full Stack Web & Android Developer">
+    <meta name="author" content="Anmol Thukral">
 
-    <title>Anmol Thukral</title>
+    <title>Anmol Thukral | Full Stack Developer</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- Theme CSS -->
-    <link href="css/main.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Custom Fonts -->
-    <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
- 
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="page-top" class="index">
+<body>
 
     <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <nav class="navbar">
         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="#page-top">
-                    Anmol Thukral</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">About</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">Contact</a>
-                    </li>
-                   
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            <a href="#" class="logo">Anmol Thukral</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
-    <!-- Header -->
-    <header>
+    <!-- Hero Section -->
+    <header class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-text">
-                        <img src="img/res.png" class="img-responsive logo-x"/>
-                        <span class="name">Anmol Thukral</span>
-                        <hr class="star-light">
-                        <span class="skills">Full Stack Web Developer - User Experience Designer - Full Stack Android Developer - Solutions Expert</span>
-                    </div>
-                </div>
+            <img src="img/res.png" alt="Anmol Thukral" class="hero-avatar">
+            <h1 class="hero-title">Anmol Thukral</h1>
+            <p class="hero-subtitle">Full Stack Web Developer • User Experience Designer • Full Stack Android Developer • Solutions Expert</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn">View Work <i class="fas fa-arrow-down"></i></a>
+                <a href="static/resume.pdf" class="btn btn-outline" target="_blank">Download CV <i class="fas fa-download"></i></a>
             </div>
         </div>
     </header>
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#healthpool" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                
-                            </div>
-                        </div>
-                        <img src="img/healthpool.png" class="img-responsive project-image" alt="">
-                    </a>
-                    <h2 class="project-name">Healthpool</h2>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#banana" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                             </div>
-                        </div>
-                        <img src="img/banana.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">Banana</h2>
+            <h2 class="section-title">My <span class="text-accent">Work</span></h2>
+            
+            <div class="portfolio-grid">
+                <!-- Healthpool -->
+                <article class="portfolio-item" 
+                         data-title="Healthpool" 
+                         data-desc="An Android Application built in order to provide all the nearby hospitals in case of emergency to a user."
+                         data-img="img/healthpool.png"
+                         data-gallery="img/screenshots/hp1.png,img/screenshots/hp2.png,img/screenshots/hp3.png,img/screenshots/hp4.png">
+                    <img src="img/healthpool.png" alt="Healthpool" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Healthpool</h3>
+                        <p class="portfolio-desc">Android Development</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#dealobar" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                             </div>
-                        </div>
-                        <img src="img/dealobar.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">DealObar</h2>
+                <!-- Banana -->
+                <article class="portfolio-item" 
+                         data-title="Banana" 
+                         data-desc="An Android Application built in order to achieve the short distance communication in mobile phones using bluetooth as medium of transmission."
+                         data-img="img/banana.png"
+                         data-gallery="img/screenshots/ban1.png,img/screenshots/ban2.png,img/screenshots/ban3.png,img/screenshots/ban4.png">
+                    <img src="img/banana.png" alt="Banana" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Banana</h3>
+                        <p class="portfolio-desc">Android Development</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#lawolaw" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              </div>
-                        </div>
-                        <img src="img/lawolaw.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">Law O Law</h2>
+                <!-- DealObar -->
+                <article class="portfolio-item" 
+                         data-title="DealObar" 
+                         data-desc="A web app that works in order to provide all the deals on ecommerce web site and make shopping easy and saving a happy experience."
+                         data-img="img/dealobar.png"
+                         data-gallery="img/screenshots/db1.png,img/screenshots/db2.png">
+                    <img src="img/dealobar.png" alt="DealObar" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">DealObar</h3>
+                        <p class="portfolio-desc">Web Development</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#nearby" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              </div>
-                        </div>
-                        <img src="img/location.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">NearBy Api</h2>
+                <!-- Law O Law -->
+                <article class="portfolio-item" 
+                         data-title="Law O Law" 
+                         data-desc="A web app created under value plus legal which is used to automate all the legal services procedures in the indian system and make filling and documentation easy."
+                         data-img="img/lawolaw.png"
+                         data-gallery="img/screenshots/lol1.png,img/screenshots/lol2.png">
+                    <img src="img/lawolaw.png" alt="Law O Law" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Law O Law</h3>
+                        <p class="portfolio-desc">Web Development</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#meracampus" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              </div>
-                        </div>
-                        <img src="img/meracampus.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">Mera Campus</h2>
+                <!-- NearBy API -->
+                <article class="portfolio-item" 
+                         data-title="NearBy API" 
+                         data-desc="A python based web api that can be used to provide all the nearby people accessing the system with desired timestamps. Also applications uses google auth for login."
+                         data-img="img/location.png"
+                         data-gallery="">
+                    <img src="img/location.png" alt="NearBy API" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">NearBy API</h3>
+                        <p class="portfolio-desc">Python Web API</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#pokemon" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                               </div>
-                        </div>
-                        <img src="img/pokemon.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">Pokemonsgo</h2>
+                <!-- Mera Campus -->
+                <article class="portfolio-item" 
+                         data-title="Mera Campus" 
+                         data-desc="One of the first android projects i have worked on. The system is built in order to provide a common interface to all the existing campuses. The system works as a cloud backend for all the daily purpose of the college infrastructure."
+                         data-img="img/meracampus.png"
+                         data-gallery="">
+                    <img src="img/meracampus.png" alt="Mera Campus" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Mera Campus</h3>
+                        <p class="portfolio-desc">Android Application</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#suggestme" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              </div>
-                        </div>
-                        <img src="img/suggestme.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">suggestme</h2>
+                <!-- Pokemons Go -->
+                <article class="portfolio-item" 
+                         data-title="Pokemons Go" 
+                         data-desc="A pokedex made as pokemon reference."
+                         data-img="img/pokemon.png"
+                         data-gallery="">
+                    <img src="img/pokemon.png" alt="Pokemons Go" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Pokemons Go</h3>
+                        <p class="portfolio-desc">Website</p>
+                    </div>
+                </article>
 
-                </div>
-                                <div class="col-sm-4 portfolio-item">
-                    <a href="#web2json" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                             </div>
-                        </div>
-                        <img src="img/web2json.png" class="img-responsive project-image" alt="">
-                    </a>
-                                        <h2 class="project-name">web2json</h2>
+                <!-- Suggest Me -->
+                <article class="portfolio-item" 
+                         data-title="Suggest Me" 
+                         data-desc="A basic android implementation of search box and text suggestions followed by usage of contact list."
+                         data-img="img/suggestme.png"
+                         data-gallery="">
+                    <img src="img/suggestme.png" alt="Suggest Me" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Suggest Me</h3>
+                        <p class="portfolio-desc">Android Application</p>
+                    </div>
+                </article>
 
-                </div>
+                 <!-- Web2Json -->
+                 <article class="portfolio-item" 
+                         data-title="Web2Json" 
+                         data-desc="A native java library used to create a json resource from the web pages."
+                         data-img="img/web2json.png"
+                         data-gallery="">
+                    <img src="img/web2json.png" alt="Web2Json" class="portfolio-thumb">
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Web2Json</h3>
+                        <p class="portfolio-desc">Java Library</p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="success" id="about">
+    <section id="about" class="section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <hr class="star-light">
+            <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hi, I am Anmol Thukral, a technology enthusiast who works in order to create better design and solutions in the field of Web and mobile technology. I work mostly in Backend fields but am proficient in developing responsive designs when required.</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Hi i am anmol thukral, a technology enthusiast who works in order to create better design and solutions in the field of Web and mobile technology. I work in the fields of Backend mostly but yes, when the need is required can develop responsive design.</p>
-                </div>
-                <div class="col-lg-4">
-                    <p>As per my education, i am pursing my engineering in the field of information technology. And i am partially working on the education as well as fun-creative writing blogs too, just to get that bone. <br/> 
-                    for more see my resume !</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="static/resume.pdf" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> See Resume
-                    </a>
+                <div class="about-text">
+                    <p>I pursued my engineering education in the field of Information Technology. I also enjoy creative writing and blogging. Feel free to download my resume to learn more about my professional journey!</p>
+                    <a href="static/resume.pdf" class="btn btn-outline" style="margin-top: 1.5rem;" target="_blank">View Full Resume</a>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Footer -->
-    <footer id="contact" class="text-center">
-        <div class="footer-above">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col col-md-4">
-                        <h3>Location</h3>
-                        <p>Janak Puri
-                            <br>New Delhi, India-110058</p>
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 2rem;">Get In <span class="text-accent">Touch</span></h2>
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <p>Janak Puri,<br>New Delhi, India-110058</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="http://www.facebook.com/an.thukral" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Google+ is defunct, removed or replaced with generic if needed, kept generic from code if wanted but cleaner to remove -->
+                        <a href="https://twitter.com/anthukral" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/anmol-thukral-a15a46a8" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/an.thukral/?hl=en" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.quora.com/profile/Anmol-Thukral" target="_blank" class="social-icon"><i class="fab fa-quora"></i></a>
+                        <a href="https://github.com/anmolthukral" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
                     </div>
-                    <div class="footer-col col-md-4">
-                        <h3>Around the Web</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a onclick="window.open('http://www.facebook.com/an.thukral');" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                <a onclick="window.open('https://plus.google.com/+AnmolThukral750');" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-    <li><a onclick="window.open('https://twitter.com/anthukral');" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-    <a onclick="window.open('https://www.linkedin.com/in/anmol-thukral-a15a46a8');" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                            </li>
-                                <li>
-    <a onclick="window.open('https://www.instagram.com/an.thukral/?hl=en');" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
-                            </li>          
-
-                                <li>
-    <a onclick="window.open('https://www.quora.com/profile/Anmol-Thukral');" class="btn-social btn-outline"><i class="fa fa-quora"></i></a>
-                            </li>
-                                <li>
-    <a onclick="window.open('https://github.com/anmolthukral');" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
-                            </li>
-                                                    
-                      </ul>
-                    </div>
-                    <div class="footer-col col-md-4">
-                        <h1>Contact me</h1>
-                        <p>+91-7503782099
-                        <br/>thukral.anmol21@gmail.com</p>
-                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>+91-7503782099</p>
+                    <p><a href="mailto:thukral.anmol21@gmail.com" class="text-accent">thukral.anmol21@gmail.com</a></p>
                 </div>
             </div>
-        </div>
-        <div class="footer-below">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        
-                    </div>
-                </div>
+            
+            <div class="text-center" style="margin-top: 4rem; color: var(--text-secondary); font-size: 0.9rem;">
+                <p>&copy; Anmol Thukral. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
-        <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-        </a>
-    </div>
-
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="healthpool" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Healthpool</h2>
-                            <hr class="star-primary">
-                            <img src="img/healthpool.png" class="img-responsive img-centered" alt="">
-                            <p> An Andorid Application built in order to provide all the nearby hospitals in case of emergency to a user.</p>
-                            <hr class="star-primary">
-                            <img class="image-responsive project-image" src="img/screenshots/hp1.png" />
-                             <img class="image-responsive project-image" src="img/screenshots/hp2.png" />
-                              <img class="image-responsive project-image" src="img/screenshots/hp3.png" />
-                               <img class="image-responsive project-image" src="img/screenshots/hp4.png" />
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Android Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="portfolio-modal modal fade" id="banana" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Banana</h2>
-                            <hr class="star-primary">
-                            <img src="img/banana.png" class="img-responsive img-centered" alt="">
-                            <p> An Andorid Application built in order to achieve the short distance communcation in mobile phones using bluetooth as medium of transmission.</p>
-                            <hr class="star-primary">
-                            <img class="image-responsive project-image" src="img/screenshots/ban1.png" />
-                             <img class="image-responsive project-image" src="img/screenshots/ban2.png" />
-                              <img class="image-responsive project-image" src="img/screenshots/ban3.png" />
-                               <img class="image-responsive project-image" src="img/screenshots/ban4.png" />
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Android Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-         <div class="portfolio-modal modal fade" id="dealobar" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> DealObar</h2>
-                            <hr class="star-primary">
-                            <img src="img/dealobar.png" class="img-responsive img-centered" alt="">
-                            <p> A web app that works in order to provide all the deals on ecommerce web site and make shopping easy and saving a happy experience.</p>
-                            <hr class="star-primary">
-
-                              <img class="image-responsive project-image" src="img/screenshots/db1.png" />
-                               <img class="image-responsive project-image" src="img/screenshots/db2.png" />
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="lawolaw" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Law O Law</h2>
-                            <hr class="star-primary">
-                            <img src="img/lawolaw.png" class="img-responsive img-centered" alt="">
-                            <p> A web app created under value plus legal which is used to automate all the legal services procedures in the indian system and make filling and documentation easy.</p>
-                            <hr class="star-primary">
-
-                              <img class="image-responsive project-image" src="img/screenshots/lol1.png" />
-                               <img class="image-responsive project-image" src="img/screenshots/lol2.png" />
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Web Development
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   <div class="portfolio-modal modal fade" id="nearby" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> NearBy API</h2>
-                            <hr class="star-primary">
-                            <img src="img/location.png" class="img-responsive img-centered" alt="">
-                            <p> A python based web api that can be used to provide all the nearby people acessing the system with desired timestamps. Also applications uses google auth for login</p>
-                            <hr class="star-primary">
-
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Python Based Web API
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <div class="portfolio-modal modal fade" id="meracampus" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Mera Campus</h2>
-                            <hr class="star-primary">
-                            <img src="img/meracampus.png" class="img-responsive img-centered" alt="">
-                            <p> One of the first android projects i have worked on. The system is built in order to provide a common interface to all the existing campuses to achieve there system. The system works as a cloud backend for all the daily purpose of the college infrastructre.</p>
-                            <hr class="star-primary">
-
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Android Applications
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <div class="portfolio-modal modal fade" id="pokemon" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Pokemons Go</h2>
-                            <hr class="star-primary">
-                            <img src="img/pokemon.png" class="img-responsive img-centered" alt="">
-                            <p> A pokedex made as pokemon reference.</p>
-                            <hr class="star-primary">
-
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Website
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="portfolio-modal modal fade" id="suggestme" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Suggest Me</h2>
-                            <hr class="star-primary">
-                            <img src="img/suggestme.png" class="img-responsive img-centered" alt="">
-                            <p> A basic andorid implementation of search box and text suggestions followed by usage of contact list.</p>
-                            <hr class="star-primary">
-
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Android Application
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- <div class="portfolio-modal modal fade" id="web2json" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2> Web2Json</h2>
-                            <hr class="star-primary">
-                            <img src="img/web2json.png" class="img-responsive img-centered" alt="">
-                            <p> A native java library used to create a json resource from the web pages</p>
-                            <hr class="star-primary">
-
-                            <ul class="list-inline item-details">
-                                
-                                <li>Service:
-                                    <strong>Java
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <button class="close-modal">&times;</button>
+            <h2 id="modal-title" style="margin-bottom: 0.5rem;">Project Title</h2>
+            <img src="" id="modal-img" alt="Project Image" class="modal-img">
+            <p id="modal-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">Project Description</p>
+            
+            <!-- Gallery Container -->
+            <div id="modal-gallery" class="modal-gallery"></div>
         </div>
     </div>
 
-
-    <!-- jQuery -->
-    <script src="jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/freelancer.min.js"></script>
-
+    <!-- Main Script -->
+    <script src="js/app.js"></script>
 </body>
-
 </html>
