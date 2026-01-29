@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Technical Blogs by Anmol Thukral - Full Stack Web & App Developer">
+    <meta name="author" content="Anmol Thukral">
+
+    <title>Blogs | Anmol Thukral</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Anmol Thukral</a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="section" style="padding-top: 10rem; padding-bottom: 2rem;">
+        <div class="container text-center">
+            <h1 class="hero-title" style="font-size: 3rem;">My Blogs</h1>
+            <p class="hero-subtitle">Thoughts, tutorials, and insights on web development.</p>
+        </div>
+    </header>
+
+    <!-- Blog Grid -->
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="blog-grid">
+                
+                <!-- Blog 4 -->
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <span class="blog-date">January 28, 2026</span>
+                        <h2 class="blog-card-title">Frontend Performance: The React Paradigm</h2>
+                        <p class="blog-card-excerpt">
+                            A comprehensive examination of frontend performance, focusing on systemic issues rather than just React-specific limitations.
+                        </p>
+                        <a href="blogs/comprehensive-performance-analysis.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <span class="blog-date">January 28, 2026</span>
+                        <h2 class="blog-card-title">useEffect vs. useLayoutEffect</h2>
+                        <p class="blog-card-excerpt">
+                            Choosing the right effect hook is key to avoiding subtle bugs and UI jank in React applications. Understand the difference.
+                        </p>
+                        <a href="blogs/useeffect-vs-uselayouteffect.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <span class="blog-date">January 28, 2026</span>
+                        <h2 class="blog-card-title">Debunking useTransition</h2>
+                        <p class="blog-card-excerpt">
+                            useTransition is a tool in React’s arsenal that helps you to render some part of the UI in the background...
+                        </p>
+                        <a href="blogs/debunking-usetransition.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <span class="blog-date">January 28, 2026</span>
+                        <h2 class="blog-card-title">React Like a Ninja</h2>
+                        <p class="blog-card-excerpt">
+                            A good React code always follows specific principles to make your applications clean, performant, and scalable.
+                        </p>
+                        <a href="blogs/react-like-a-ninja.html" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Placeholder for future blogs -->
+                <!-- 
+                <article class="blog-card">
+                    <div class="blog-card-content">
+                        <span class="blog-date">Coming Soon</span>
+                        <h2 class="blog-card-title">Upcoming Post</h2>
+                        <p class="blog-card-excerpt">
+                            Stay tuned for more articles!
+                        </p>
+                    </div>
+                </article>
+                -->
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center" style="color: var(--text-secondary); font-size: 0.9rem;">
+                <p>&copy; Anmol Thukral. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

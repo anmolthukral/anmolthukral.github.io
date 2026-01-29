@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalTitle = document.getElementById('modal-title');
     const modalDesc = document.getElementById('modal-desc');
     const modalImg = document.getElementById('modal-img');
+    const modalRepo = document.getElementById('modal-repo');
     const modalGallery = document.getElementById('modal-gallery');
     const closeModal = document.querySelector('.close-modal');
 
@@ -76,6 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
             modalTitle.textContent = title;
             modalDesc.textContent = desc;
             modalImg.src = mainImg;
+
+            // Handle Repo Link
+            const repoUrl = item.getAttribute('data-repo');
+            if (repoUrl && repoUrl !== '#' && repoUrl.trim() !== '') {
+                modalRepo.href = repoUrl;
+                modalRepo.style.display = 'inline-flex';
+            } else {
+                modalRepo.style.display = 'none';
+            }
             
             // Clear previous gallery
             modalGallery.innerHTML = '';

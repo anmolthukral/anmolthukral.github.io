@@ -31,9 +31,10 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -61,6 +62,7 @@
                 <article class="portfolio-item" 
                          data-title="Healthpool" 
                          data-desc="An Android Application built in order to provide all the nearby hospitals in case of emergency to a user."
+                         data-repo="https://github.com/anmolthukral/healthpool"
                          data-img="img/healthpool.png"
                          data-gallery="img/screenshots/hp1.png,img/screenshots/hp2.png,img/screenshots/hp3.png,img/screenshots/hp4.png">
                     <img src="img/healthpool.png" alt="Healthpool" class="portfolio-thumb">
@@ -74,6 +76,7 @@
                 <article class="portfolio-item" 
                          data-title="Banana" 
                          data-desc="An Android Application built in order to achieve the short distance communication in mobile phones using bluetooth as medium of transmission."
+                         data-repo="https://github.com/anmolthukral/banana"
                          data-img="img/banana.png"
                          data-gallery="img/screenshots/ban1.png,img/screenshots/ban2.png,img/screenshots/ban3.png,img/screenshots/ban4.png">
                     <img src="img/banana.png" alt="Banana" class="portfolio-thumb">
@@ -87,6 +90,7 @@
                 <article class="portfolio-item" 
                          data-title="DealObar" 
                          data-desc="A web app that works in order to provide all the deals on ecommerce web site and make shopping easy and saving a happy experience."
+                         data-repo="https://github.com/anmolthukral/dealobar"
                          data-img="img/dealobar.png"
                          data-gallery="img/screenshots/db1.png,img/screenshots/db2.png">
                     <img src="img/dealobar.png" alt="DealObar" class="portfolio-thumb">
@@ -100,6 +104,7 @@
                 <article class="portfolio-item" 
                          data-title="Law O Law" 
                          data-desc="A web app created under value plus legal which is used to automate all the legal services procedures in the indian system and make filling and documentation easy."
+                         data-repo="https://github.com/anmolthukral/lawolaw"
                          data-img="img/lawolaw.png"
                          data-gallery="img/screenshots/lol1.png,img/screenshots/lol2.png">
                     <img src="img/lawolaw.png" alt="Law O Law" class="portfolio-thumb">
@@ -113,6 +118,7 @@
                 <article class="portfolio-item" 
                          data-title="NearBy API" 
                          data-desc="A python based web api that can be used to provide all the nearby people accessing the system with desired timestamps. Also applications uses google auth for login."
+                         data-repo="https://github.com/anmolthukral/nearby-api"
                          data-img="img/location.png"
                          data-gallery="">
                     <img src="img/location.png" alt="NearBy API" class="portfolio-thumb">
@@ -126,6 +132,7 @@
                 <article class="portfolio-item" 
                          data-title="Mera Campus" 
                          data-desc="One of the first android projects i have worked on. The system is built in order to provide a common interface to all the existing campuses. The system works as a cloud backend for all the daily purpose of the college infrastructure."
+                         data-repo="https://github.com/anmolthukral/mera-campus"
                          data-img="img/meracampus.png"
                          data-gallery="">
                     <img src="img/meracampus.png" alt="Mera Campus" class="portfolio-thumb">
@@ -139,6 +146,7 @@
                 <article class="portfolio-item" 
                          data-title="Pokemons Go" 
                          data-desc="A pokedex made as pokemon reference."
+                         data-repo="https://github.com/anmolthukral/pokemons-go"
                          data-img="img/pokemon.png"
                          data-gallery="">
                     <img src="img/pokemon.png" alt="Pokemons Go" class="portfolio-thumb">
@@ -152,6 +160,7 @@
                 <article class="portfolio-item" 
                          data-title="Suggest Me" 
                          data-desc="A basic android implementation of search box and text suggestions followed by usage of contact list."
+                         data-repo="https://github.com/anmolthukral/suggest-me"
                          data-img="img/suggestme.png"
                          data-gallery="">
                     <img src="img/suggestme.png" alt="Suggest Me" class="portfolio-thumb">
@@ -165,6 +174,7 @@
                  <article class="portfolio-item" 
                          data-title="Web2Json" 
                          data-desc="A native java library used to create a json resource from the web pages."
+                         data-repo="https://github.com/anmolthukral/web2json"
                          data-img="img/web2json.png"
                          data-gallery="">
                     <img src="img/web2json.png" alt="Web2Json" class="portfolio-thumb">
@@ -235,6 +245,10 @@
             <h2 id="modal-title" style="margin-bottom: 0.5rem;">Project Title</h2>
             <img src="" id="modal-img" alt="Project Image" class="modal-img">
             <p id="modal-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">Project Description</p>
+            
+            <a id="modal-repo" href="#" target="_blank" class="btn" style="margin-bottom: 2rem; display: none;">
+                <i class="fab fa-github"></i> View Code
+            </a>
             
             <!-- Gallery Container -->
             <div id="modal-gallery" class="modal-gallery"></div>
