@@ -78,12 +78,18 @@ document.addEventListener('DOMContentLoaded', () => {
             modalDesc.textContent = desc;
             modalImg.src = mainImg;
 
-            // Handle Repo Link
-            const repoUrl = item.getAttribute('data-repo');
-            if (repoUrl && repoUrl !== '#' && repoUrl.trim() !== '') {
-                modalRepo.href = repoUrl;
+            // Handle Repo Link: build from title by normalizing (lowercase, remove non-alphanumerics)
+            // Resulting URL: https://github.com/anmolthukral/<normalized-title>
+            const owner = 'anmolthukral';
+            const normalized = String(title || '')
+                .toLowerCase()
+                .replace(/[^a-z0-9]/g, ''); // remove spaces & special chars
+
+            if (normalized && normalized.length > 0) {
+                modalRepo.href = `https://github.com/${owner}/${normalized}`;
                 modalRepo.style.display = 'inline-flex';
             } else {
+                // fallback: if normalized title is empty, hide the button
                 modalRepo.style.display = 'none';
             }
             
