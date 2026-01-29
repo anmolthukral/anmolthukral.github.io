@@ -24,7 +24,11 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <!-- Navigation -->
+    <link rel="stylesheet" href="http://localhost:5174/common-nav.css">
+    
+    <!-- Fallback Navigation (Original) -->
+    <nav class="navbar" id="fallback-nav">
         <div class="container">
             <a href="#" class="logo">Anmol Thukral</a>
             <button class="menu-toggle" aria-label="Toggle navigation">
@@ -38,9 +42,21 @@
             </ul>
         </div>
     </nav>
+    
+    <!-- Micro-Frontend Navigation -->
+    <script type="module" src="http://localhost:5174/common-nav.js"></script>
+    <engineering-playbook-nav id="mfe-nav"></engineering-playbook-nav>
+
+    <script>
+        // Logic to toggle between fallback and MFE nav
+        customElements.whenDefined('engineering-playbook-nav').then(() => {
+            const fallback = document.getElementById('fallback-nav');
+            if (fallback) fallback.style.display = 'none';
+        });
+    </script>
 
     <!-- Hero Section -->
-    <header class="hero">
+    <header class="hero" style="min-height: 80vh; padding-top: 120px;">
         <div class="container">
             <img src="img/res.png" alt="Anmol Thukral" class="hero-avatar">
             <h1 class="hero-title">Anmol Thukral</h1>

@@ -1,0 +1,9 @@
+{
+  "name": "profile-static",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve -p 8080 .",
+    "build": "node build-profile.js"
+  }
+}
