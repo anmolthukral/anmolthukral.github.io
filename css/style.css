@@ -90,6 +90,29 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+/* Ensure nav links are spaced and typographically consistent */
+.fallback-navbar .nav-links {
+    display: flex;
+    gap: 1.4rem;
+    align-items: center;
+}
+
+.fallback-navbar .nav-link {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    padding: 0.35rem 0.6rem;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+.fallback-navbar .nav-link:hover,
+.fallback-navbar .nav-link.active {
+    color: #071428;
+    background: linear-gradient(90deg, rgba(56,189,248,0.12), rgba(99,102,241,0.06));
+    box-shadow: 0 6px 18px rgba(2,6,23,0.25);
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
