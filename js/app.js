@@ -20,8 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // Smooth Scrolling for Anchors
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const currentHref = this.getAttribute('href');
+            if (!currentHref || !currentHref.startsWith('#')) return;
+
             e.preventDefault();
-            const targetId = this.getAttribute('href');
+            const targetId = currentHref;
             if (targetId === '#') return;
             
             const targetElement = document.querySelector(targetId);

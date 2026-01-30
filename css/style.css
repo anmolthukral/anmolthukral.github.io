@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-accent { color: var(--accent-color); }
 
 /* Navigation */
-.navbar {
+.fallback-navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.navbar .container {
+.fallback-navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
