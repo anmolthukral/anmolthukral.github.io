@@ -24,8 +24,8 @@
 <body>
 
     <!-- Navigation -->
-    <!-- Navigation -->
-    <link rel="stylesheet" href="http://localhost:5174/common-nav.css">
+    <!-- Micro-frontend / shared nav (production) - loads hosted nav CSS and webcomponent -->
+    <link rel="stylesheet" href="https://megamind-nav.vercel.app/common-nav.css">
     
     <!-- Fallback Navigation (Original) -->
     <nav class="navbar" id="fallback-nav">
@@ -44,8 +44,9 @@
     </nav>
     
     <!-- Micro-Frontend Navigation -->
-    <script type="module" src="http://localhost:5174/common-nav.js"></script>
-    <engineering-playbook-nav id="mfe-nav"></engineering-playbook-nav>
+    <!-- Load the hosted webcomponent (falls back to the original nav with id="fallback-nav") -->
+    <script type="module" src="https://megamind-nav.vercel.app/webcomponent/nav-component.js"></script>
+    <engineering-playbook-nav id="mfe-nav" data-src="https://megamind-nav.vercel.app/nav-fragment"></engineering-playbook-nav>
 
     <script>
         // Logic to toggle between fallback and MFE nav
