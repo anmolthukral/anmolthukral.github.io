@@ -10,7 +10,7 @@ const dirsToCopy = ['css', 'fonts', 'img', 'js', 'json', 'mail', 'static', 'vend
 const filesToCopy = ['index.html', 'blogs.html', 'storymaker.html', 'favicon.ico'];
 
 const distDir = path.join(__dirname, 'dist');
-const COMMON_NAV_URL = process.env.COMMON_NAV_URL || 'http://localhost:5174';
+const COMMON_NAV_URL = process.env.COMMON_NAV_URL || 'https://megamind-nav.vercel.app';
 
 if (fs.existsSync(distDir)) {
     fs.rmSync(distDir, { recursive: true, force: true });
