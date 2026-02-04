@@ -79,7 +79,13 @@ document.addEventListener('DOMContentLoaded', () => {
             // Populate Modal
             modalTitle.textContent = title;
             modalDesc.textContent = desc;
-            modalImg.src = mainImg;
+            // Handle main image: if provided, show it, otherwise hide
+            if (mainImg) {
+                modalImg.src = mainImg;
+                modalImg.style.display = 'block';
+            } else {
+                modalImg.style.display = 'none';
+            }
 
             // Handle Repo Link
             const repoUrl = item.getAttribute('data-repo');
@@ -96,13 +102,17 @@ document.addEventListener('DOMContentLoaded', () => {
             // If we have extra images defined in data-gallery (e.g. "img/1.png,img/2.png")
             const galleryImages = item.getAttribute('data-gallery');
             if (galleryImages) {
-                const images = galleryImages.split(',');
+                const images = galleryImages.split(',').map(s => s.trim()).filter(Boolean);
                 images.forEach(src => {
                     const img = document.createElement('img');
-                    img.src = src.trim();
-                    img.className = 'modal-img'; // reuse style
+                    img.src = src;
+                    img.className = 'modal-gallery-item';
                     modalGallery.appendChild(img);
                 });
+                modalGallery.style.display = 'grid';
+            } else {
+                // Hide the gallery area if there are no screenshots
+                modalGallery.style.display = 'none';
             }
 
             modal.classList.add('active');
