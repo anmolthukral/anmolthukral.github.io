@@ -1,88 +1,114 @@
 :root {
-    /* Oat Overrides/Mappings if needed, or just use custom vars */
-    --primary: var(--accent-color);
+    /* Profile specific overrides if needed */
 }
 
 /* Hero Section */
 .hero {
-    min-height: 80vh;
+    min-height: 85vh; /* Taller hero */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 120px;
+    padding-top: 80px;
     position: relative;
+    /* Soft gradient background */
+    background: radial-gradient(circle at 50% 50%, #f0f9ff 0%, #ffffff 70%);
 }
 
 .hero-avatar {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 4px solid var(--surface-color);
+    border: 6px solid #ffffff;
+    box-shadow: var(--shadow-lg);
     margin-bottom: 2rem;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
+.hero-avatar:hover { transform: scale(1.05); }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(to right, #fff, #94a3b8);
+    background: linear-gradient(135deg, #0f172a 0%, #475569 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: -0.03em;
+    padding-bottom: 0.2rem;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
 }
 
-/* Portfolio Custom Styles (Oat handles layout via .row and .col) */
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.portfolio-item {
+    background: #ffffff;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
+}
+
 .portfolio-thumb {
     width: 100%;
-    height: 200px;
+    height: 220px;
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
 }
+
+.portfolio-content { padding: 1.5rem; }
+.portfolio-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-primary); }
+.portfolio-desc { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.6; }
 
 /* About Grid */
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 4rem;
+    align-items: center;
 }
 .about-text p {
-    color: var(--text-secondary);
+    color: #334155;
     line-height: 1.8;
-}
-@media (max-width: 768px) {
-    .about-grid { grid-template-columns: 1fr; }
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* Modal Styles */
+/* Modal Styles - Light */
 .modal {
-    position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: rgba(15, 23, 42, 0.95);
-    z-index: 2000;
-    display: flex; align-items: center; justify-content: center;
-    opacity: 0; pointer-events: none;
-    transition: opacity 0.3s;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
 }
-.modal.active { opacity: 1; pointer-events: auto; }
 .modal-content {
-    background: var(--surface-color);
-    padding: 2rem;
-    border-radius: 1rem;
-    max-width: 800px; width: 90%;
-    max-height: 90vh; overflow-y: auto;
-    position: relative;
+    background: #ffffff;
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
 }
-.close-modal {
-    position: absolute; top: 1rem; right: 1rem;
-    background: none; border: none; font-size: 1.5rem; color: #fff; cursor: pointer;
+.close-modal { color: var(--text-primary); }
+
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-title { font-size: 3rem; }
 }
-.modal-img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0; }
-.modal-gallery { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
-.modal-gallery img { width: 100px; height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer; }
