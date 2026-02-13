@@ -1,24 +1,6 @@
 :root {
-    --bg-color: #0f172a;
-    --surface-color: #1e293b;
-    --accent-color: #38bdf8;
-    --text-primary: #f8fafc;
-    --text-secondary: #94a3b8;
-    --border-color: #334155;
-    
     /* Oat Overrides/Mappings if needed, or just use custom vars */
     --primary: var(--accent-color);
-}
-
-body {
-    background-color: var(--bg-color);
-    color: var(--text-primary);
-    font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Outfit', sans-serif;
-    color: var(--text-primary);
 }
 
 /* Hero Section */
@@ -56,15 +38,26 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 
-/* Custom Utilities that don't exist in Oat or are specific */
-.text-accent { color: var(--accent-color); }
-
 /* Portfolio Custom Styles (Oat handles layout via .row and .col) */
 .portfolio-thumb {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-bottom: 1px solid var(--border-color);
+}
+
+/* About Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.about-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+    .about-grid { grid-template-columns: 1fr; }
 }
 
 /* Modal Styles */
@@ -93,14 +86,3 @@ h1, h2, h3, h4, h5, h6 {
 .modal-img { max-width: 100%; height: auto; border-radius: 0.5rem; margin: 1rem 0; }
 .modal-gallery { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem; }
 .modal-gallery img { width: 100px; height: 100px; object-fit: cover; border-radius: 4px; cursor: pointer; }
-
-/* Footer */
-.footer {
-    background-color: var(--surface-color);
-    padding: 4rem 0;
-    margin-top: 4rem;
-    text-align: center;
-}
-.social-links { display: flex; justify-content: center; gap: 1rem; margin-top: 1rem; }
-.social-icon { color: var(--text-secondary); font-size: 1.5rem; transition: 0.3s; }
-.social-icon:hover { color: var(--accent-color); }
