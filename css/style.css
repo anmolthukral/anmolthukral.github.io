@@ -12,8 +12,7 @@
     text-align: center;
     padding-top: 80px;
     position: relative;
-    /* Soft gradient background */
-    background: radial-gradient(circle at 50% 50%, #f0f9ff 0%, #ffffff 70%);
+    background: radial-gradient(circle at 50% 50%, #f0fdf4 0%, #ffffff 70%);
 }
 
 .hero-avatar {
@@ -32,7 +31,7 @@
     font-size: 4rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #0f172a 0%, #475569 100%);
+    background: linear-gradient(135deg, #1a2b4b 0%, #2b5b9a 50%, #4cb050 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
