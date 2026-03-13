@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Mouna Ramesh K - Engineering Manager">
+    <meta name="author" content="Mouna Ramesh K">
+
+    <title>Mouna Ramesh K | Engineering Manager</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Oat UI -->
+    <link rel="stylesheet" href="https://unpkg.com/@knadh/oat/oat.min.css">
+    <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script>
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.svg">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <link rel="stylesheet" href="https://megamind-nav.vercel.app/common-nav.css">
+    
+    <!-- Fallback Navigation -->
+    <nav class="fallback-navbar" id="fallback-nav">
+        <div class="container">
+            <a href="/" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="img/logo.svg" alt="Engineer Playbook Logo" style="height: 32px; width: 32px;">
+                Engineer Playbook
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/blogs" class="nav-link">Blogs</a></li>
+                <li><a href="/tutorials" class="nav-link">Tutorials</a></li>
+                <li><a href="/profile" class="nav-link">Team</a></li>
+                <li><a href="/tutorials/playground" class="nav-link">Playground</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Micro-Frontend Navigation -->
+    <script type="module" crossorigin="anonymous" src="https://megamind-nav.vercel.app/common-nav.js"></script>
+    <engineering-playbook-nav id="mfe-nav" data-src="/nav/nav-fragment"></engineering-playbook-nav>
+
+    <script>
+        customElements.whenDefined('engineering-playbook-nav').then(() => {
+            const fallback = document.getElementById('fallback-nav');
+            if (fallback) fallback.style.display = 'none';
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 80vh; padding-top: 120px;">
+        <div class="container">
+            <h1 class="hero-title">Mouna Ramesh K</h1>
+            <p class="hero-subtitle">Engineering Manager • Strategic Leader • Technology Innovator</p>
+            <p style="max-width: 800px; margin: 1.5rem auto; opacity: 0.9; line-height: 1.6;">
+                16+ years of experience scaling high-performing distributed teams and delivering enterprise SaaS solutions. Expert in remote team leadership and AI-first engineering cultures.
+            </p>
+            <div class="hero-actions">
+                <a href="#experience" class="btn">Experience <i class="fas fa-arrow-down"></i></a>
+                <a href="#" class="btn btn-outline" onclick="alert('Resume available upon request')">Contact Me <i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem;">Professional <span class="text-accent">Experience</span></h2>
+            
+            <div class="experience-list">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                            <h3>Manager – Software Development</h3>
+                            <span class="text-secondary">Feb 2023 – Present</span>
+                        </div>
+                        <h4 class="text-accent">First American India</h4>
+                        <p>Leading engineering transformation for a Fortune 500 title insurance provider. Managed team scaling from 7 to 24 members while delivering 6+ critical customer-facing capabilities with zero production incidents.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                            <li>Achieved $45K-$60K annual cost savings through infrastructure optimization and automation.</li>
+                            <li>Championed AI-first culture through 10+ strategic POCs, reducing performance analysis time by 92%.</li>
+                            <li>Standardized performance engineering across 10+ services and eliminated OOM incidents.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                            <h3>Technical Manager</h3>
+                            <span class="text-secondary">Oct 2015 – Feb 2023</span>
+                        </div>
+                        <h4 class="text-accent">Happiest Minds Technologies</h4>
+                        <p>Led engineering delivery for Fortune 500 identity security client. Managed 7 scrum teams building privileged access management and CIAM solutions.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                            <li>Owned complete program management lifecycle including budget (P&L) and stakeholder alignment.</li>
+                            <li>Drove microservices architecture adoption and established observability best practices.</li>
+                            <li>Received "Innovation and Technology Team Award" for setting benchmarks in technical excellence.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                            <h3>Software Developer</h3>
+                            <span class="text-secondary">Apr 2009 – Oct 2015</span>
+                        </div>
+                        <h4 class="text-accent">Fidelity National Financial</h4>
+                        <p>Developed enterprise IoT and title insurance solutions.</p>
+                        <ul style="margin-left: 1.5rem; margin-top: 1rem;">
+                            <li>Executed IoT projects integrating industrial devices using Azure IoT Hub and AWS IoT.</li>
+                            <li>Built document management and contact workflows for title insurance platforms.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Competencies Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem;">Core <span class="text-accent">Competencies</span></h2>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4>Leadership</h4>
+                            <p>Remote Team Leadership, Stakeholder Management, Budgeting (P&L), OKRs/KPIs, Strategic Vendor Partnerships.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4>Engineering</h4>
+                            <p>CI/CD, Cloud Architecture (AWS/Azure), Quality Engineering, Observability (Datadog/Grafana), SRE.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h4>Innovation</h4>
+                            <p>AI/ML Innovation, GenAI Adoption, Microservices, IoT, GP2, UVP.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="text-secondary text-sm">
+                © 2026 Mouna Ramesh K. Part of the Engineer Playbook Team.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

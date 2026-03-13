@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Freelancer portfolio of Anmol Thukral - Full Stack Web & App Developer">
+    <meta name="author" content="Anmol Thukral">
+
+    <title>Anmol Thukral | Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Oat UI -->
+    <link rel="stylesheet" href="https://unpkg.com/@knadh/oat/oat.min.css">
+    <script src="https://unpkg.com/@knadh/oat/oat.min.js" defer></script>
+
+    <!-- Custom Styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo.svg">
+ <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-19GSDP6BS8"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-19GSDP6BS8');
+</script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- Micro-frontend / shared nav (production) - loads hosted nav CSS and webcomponent -->
+    <!-- Micro-frontend / shared nav (production) - loads hosted nav CSS and webcomponent -->
+    <!-- Micro-frontend / shared nav (production) - loads hosted nav CSS and webcomponent -->
+    <link rel="stylesheet" href="https://megamind-nav.vercel.app/common-nav.css">
+    
+    <!-- Fallback Navigation (Original) -->
+    <nav class="fallback-navbar" id="fallback-nav">
+        <div class="container">
+            <a href="/" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+                <img src="img/logo.svg" alt="Engineer Playbook Logo" style="height: 32px; width: 32px;">
+                Engineer Playbook
+            </a>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="/blogs" class="nav-link">Blogs</a></li>
+                <li><a href="/tutorials" class="nav-link">Tutorials</a></li>
+                <li><a href="/profile" class="nav-link">Team</a></li>
+                <li><a href="/tutorials/playground" class="nav-link">Playground</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Micro-Frontend Navigation -->
+    <!-- Load the hosted webcomponent (falls back to the original nav with id="fallback-nav") -->
+    <script type="module" crossorigin="anonymous" src="https://megamind-nav.vercel.app/common-nav.js"></script>
+    <engineering-playbook-nav id="mfe-nav" data-src="/nav/nav-fragment"></engineering-playbook-nav>
+
+    <script>
+        // Logic to toggle between fallback and MFE nav
+        customElements.whenDefined('engineering-playbook-nav').then(() => {
+            const fallback = document.getElementById('fallback-nav');
+            if (fallback) fallback.style.display = 'none';
+        });
+    </script>
+
+    <!-- Hero Section -->
+    <header class="hero" style="min-height: 80vh; padding-top: 120px;">
+        <div class="container">
+            <img src="img/res.png" alt="Anmol Thukral" class="hero-avatar">
+            <h1 class="hero-title">Anmol Thukral</h1>
+            <p class="hero-subtitle">Full Stack Web Developer • User Experience Designer • Solutions Expert</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn">View Work <i class="fas fa-arrow-down"></i></a>
+                <a href="static/resume.pdf" class="btn btn-outline" target="_blank">View Resume <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <h2 class="text-center" style="margin-bottom: 3rem;">My <span class="text-accent">Work</span></h2>
+            
+            <div class="row">
+                <!-- Healthpool -->
+                <div class="col-4">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="Healthpool" 
+                             data-desc="An Android Application built in order to provide all the nearby hospitals in case of emergency to a user."
+                             data-repo="https://github.com/anmolthukral/healthpool"
+                             data-img="img/healthpool.png"
+                             data-gallery="img/screenshots/hp1.png,img/screenshots/hp2.png,img/screenshots/hp3.png,img/screenshots/hp4.png"
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/healthpool.png" alt="Healthpool" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>Healthpool</h3>
+                            <p class="text-light">Android Development</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Banana -->
+                <div class="col-4">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="Banana" 
+                             data-desc="An Android Application built in order to achieve the short distance communication in mobile phones using bluetooth as medium of transmission."
+                             data-repo="https://github.com/anmolthukral/banana"
+                             data-img="img/banana.png"
+                             data-gallery="img/screenshots/ban1.png,img/screenshots/ban2.png,img/screenshots/ban3.png,img/screenshots/ban4.png"
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/banana.png" alt="Banana" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>Banana</h3>
+                            <p class="text-light">Android Development</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- DealObar -->
+                <div class="col-4">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="DealObar" 
+                             data-desc="A web app that works in order to provide all the deals on ecommerce web site and make shopping easy and saving a happy experience."
+                             data-repo="https://github.com/anmolthukral/dealobar"
+                             data-img="img/dealobar.png"
+                             data-gallery="img/screenshots/db1.png,img/screenshots/db2.png"
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/dealobar.png" alt="DealObar" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>DealObar</h3>
+                            <p class="text-light">Web Development</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Law O Law -->
+                <div class="col-4" style="margin-top: 2rem;">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="Law O Law" 
+                             data-desc="A web app created under value plus legal which is used to automate all the legal services procedures in the indian system and make filling and documentation easy."
+                             data-repo="https://github.com/anmolthukral/lawolaw"
+                             data-img="img/lawolaw.png"
+                             data-gallery="img/screenshots/lol1.png,img/screenshots/lol2.png"
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/lawolaw.png" alt="Law O Law" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>Law O Law</h3>
+                            <p class="text-light">Web Development</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- NearBy API -->
+                <div class="col-4" style="margin-top: 2rem;">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="NearBy API" 
+                             data-desc="A python based web api that can be used to provide all the nearby people accessing the system with desired timestamps. Also applications uses google auth for login."
+                             data-repo="https://github.com/anmolthukral/nearby-api"
+                             data-img="img/location.png"
+                             data-gallery=""
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/location.png" alt="NearBy API" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>NearBy API</h3>
+                            <p class="text-light">Python Web API</p>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Mera Campus -->
+                <div class="col-4" style="margin-top: 2rem;">
+                    <article class="card h-100 portfolio-item" 
+                             data-title="Mera Campus" 
+                             data-desc="One of the first android projects i have worked on. The system is built in order to provide a common interface to all the existing campuses. The system works as a cloud backend for all the daily purpose of the college infrastructure."
+                             data-repo="https://github.com/anmolthukral/mera-campus"
+                             data-img="img/meracampus.png"
+                             data-gallery=""
+                             style="cursor: pointer; background: var(--surface-color); border: 1px solid var(--border-color);">
+                        <img src="img/meracampus.png" alt="Mera Campus" class="portfolio-thumb">
+                        <div style="padding: 1.5rem;">
+                            <h3>Mera Campus</h3>
+                            <p class="text-light">Android Application</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hi, I am Anmol Thukral, a technology enthusiast who works in order to create better design and solutions in the field of Web and mobile technology. I work mostly in Backend fields but am proficient in developing responsive designs when required.</p>
+                </div>
+                <div class="about-text">
+                    <p>I pursued my engineering education in the field of Information Technology. I also enjoy creative writing and blogging. Feel free to download my resume to learn more about my professional journey!</p>
+                    <a href="static/resume.pdf" class="btn btn-outline" style="margin-top: 1.5rem;" target="_blank">View Full Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 2rem;">Get In <span class="text-accent">Touch</span></h2>
+            
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Location</h3>
+                    <p>Janak Puri,<br>New Delhi, India-110058</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="http://www.facebook.com/an.thukral" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <!-- Google+ is defunct, removed or replaced with generic if needed, kept generic from code if wanted but cleaner to remove -->
+                        <a href="https://twitter.com/anthukral" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/anmol-thukral-a15a46a8" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/an.thukral/?hl=en" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.quora.com/profile/Anmol-Thukral" target="_blank" class="social-icon"><i class="fab fa-quora"></i></a>
+                        <a href="https://github.com/anmolthukral" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://buymeacoffee.com/an.thukral" target="_blank" class="social-icon" aria-label="Buy me a coffee"><i class="fas fa-coffee"></i></a>
+                        <a href="https://www.npmjs.com/~anmolthukral" target="_blank" class="social-icon" aria-label="npm profile"><i class="fab fa-npm"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p>+91-7503782099</p>
+                    <p><a href="mailto:thukral.anmol21@gmail.com" class="text-accent">thukral.anmol21@gmail.com</a></p>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 4rem; color: var(--text-secondary); font-size: 0.9rem;">
+                <p>&copy; Anmol Thukral. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2 id="modal-title" style="margin-bottom: 0.5rem;">Project Title</h2>
+            <img src="" id="modal-img" alt="Project Image" class="modal-img">
+            <p id="modal-desc" style="color: var(--text-secondary); margin-bottom: 2rem;">Project Description</p>
+            
+            <a id="modal-repo" href="#" target="_blank" class="btn" style="margin-bottom: 2rem; display: none;">
+                <i class="fab fa-github"></i> View Code
+            </a>
+            
+            <!-- Gallery Container -->
+            <div id="modal-gallery" class="modal-gallery"></div>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="js/app.js"></script>
+</body>
+</html>

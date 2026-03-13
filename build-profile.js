@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 // Directories to copy
 const dirsToCopy = ['css', 'fonts', 'img', 'js', 'json', 'mail', 'static', 'vendor'];
-const filesToCopy = ['index.html', 'blogs.html', 'storymaker.html', 'favicon.ico'];
+const filesToCopy = ['index.html', 'blogs.html', 'storymaker.html', 'favicon.ico', 'anmol-thukral.html', 'mouna-ramesh.html'];
 
 const distDir = path.join(__dirname, 'dist');
 const COMMON_NAV_URL = process.env.COMMON_NAV_URL || 'https://megamind-nav.vercel.app';
