@@ -7,7 +7,8 @@ const __dirname = path.dirname(__filename);
 
 // Directories to copy
 const dirsToCopy = ['css', 'fonts', 'img', 'js', 'json', 'mail', 'static', 'vendor'];
-const filesToCopy = ['index.html', 'blogs.html', 'storymaker.html', 'favicon.ico', 'anmol-thukral.html', 'mouna-ramesh.html'];
+const filesToCopy = ['index.html', 'favicon.ico'];
+const dirsWithIndex = ['anmol-thukral', 'mouna-ramesh', 'blogs', 'storymaker'];
 
 const distDir = path.join(__dirname, 'dist');
 const COMMON_NAV_URL = process.env.COMMON_NAV_URL || 'https://megamind-nav.vercel.app';
@@ -28,6 +29,15 @@ filesToCopy.forEach(file => {
              content = content.replace(/http:\/\/localhost:5174/g, COMMON_NAV_URL);
         }
         fs.writeFileSync(dest, content);
+    }
+});
+
+// Copy directories with index.html (for clean URL routing)
+dirsWithIndex.forEach(dir => {
+    const src = path.join(__dirname, dir);
+    const dest = path.join(distDir, dir);
+    if (fs.existsSync(src)) {
+        fs.cpSync(src, dest, { recursive: true });
     }
 });
 
