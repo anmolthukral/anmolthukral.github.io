@@ -30,36 +30,8 @@
 
     <!-- Navigation -->
     <link rel="stylesheet" href="https://megamind-nav.vercel.app/common-nav.css">
-    
-    <!-- Fallback Navigation -->
-    <nav class="fallback-navbar" id="fallback-nav">
-        <div class="container">
-            <a href="/" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
-                <img src="img/logo.svg" alt="Engineer Playbook Logo" style="height: 32px; width: 32px;">
-                Engineer Playbook
-            </a>
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="/blogs" class="nav-link">Blogs</a></li>
-                <li><a href="/tutorials" class="nav-link">Tutorials</a></li>
-                <li><a href="/profile" class="nav-link active">Team</a></li>
-                <li><a href="/tutorials/playground" class="nav-link">Playground</a></li>
-            </ul>
-        </div>
-    </nav>
-    
-    <!-- Micro-Frontend Navigation -->
     <script type="module" crossorigin="anonymous" src="https://megamind-nav.vercel.app/common-nav.js"></script>
-    <engineering-playbook-nav id="mfe-nav" data-src="/nav/nav-fragment"></engineering-playbook-nav>
-
-    <script>
-        customElements.whenDefined('engineering-playbook-nav').then(() => {
-            const fallback = document.getElementById('fallback-nav');
-            if (fallback) fallback.style.display = 'none';
-        });
-    </script>
+    <engineering-playbook-nav></engineering-playbook-nav>
 
     <!-- Hero Section -->
     <header class="hero" style="min-height: 50vh; padding-top: 120px; display: flex; align-items: center;">
