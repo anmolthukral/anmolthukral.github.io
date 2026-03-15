@@ -3,5 +3,9 @@
   "builds": [
     { "src": "package.json", "use": "@vercel/static-build" }
   ],
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/404.html" }
+  ]
 }
